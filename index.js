@@ -24,6 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         placeholders: {
           reply_field: 'こちらに記入してください',
+        },
+        actions: {
+          push_notify_yes: 'はい',
+          push_notify_no: 'いいえ',
         }
       }
     }
