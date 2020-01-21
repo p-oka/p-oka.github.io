@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>p-oka sample page</title>
+    <title>Share SOELU Videos</title>
     <meta charset="utf-8">
-    <meta name="description" content="p-okaのホスティングお試しサイト">
+    <meta name="description" content="Share SOELU videos">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        width: 980px;
+        margin: 0 auto;
+      }
+
+      .video-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+
+      .video-item p {
+        font-size: 16px;
+      }
+
+      .video-item video {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <video width="50%" controls>
-      <source src="https://soelu-mp4.s3-ap-northeast-1.amazonaws.com/36.mp4" type="video/mp4">
-    </video>
+    <div class="container">
+      <h1>SOELU ビデオレッスン共有</h1>
+      <div class="video-area">
+        <div class="video-item">
+          <p>肩・腰すっきり！ストレッチ part1</p>
+          <video controls src="https://storage.googleapis.com/soelu-public/external_videos/50/video.mp4" poster="https://storage.googleapis.com/soelu-public/external_videos/50/thumbnail.jpg"></video>
+        </div>
+        <div class="video-item">
+          <p>肩・腰すっきり！ストレッチ part2</p>
+          <video controls src="https://storage.googleapis.com/soelu-public/external_videos/51/video.mp4" poster="https://storage.googleapis.com/soelu-public/external_videos/51/thumbnail.jpg"></video>
+        </div>
+        <div class="video-item">
+          <p>朝ヨガ</p>
+          <video controls src="https://storage.googleapis.com/soelu-public/external_videos/55/video.mp4" poster="https://storage.googleapis.com/soelu-public/external_videos/55/thumbnail.jpg"></video>
+        </div>
+        <div class="video-item">
+          <p>朝ヨガ〜太陽礼拝〜</p>
+          <video controls src="https://storage.googleapis.com/soelu-public/external_videos/11/video.mp4" poster="https://storage.googleapis.com/soelu-public/external_videos/11/thumbnail.jpg"></video>
+        </div>
+        <div class="video-item">
+          <p>赤ちゃんといっしょ産後ストレッチ</p>
+          <video controls src="https://storage.googleapis.com/soelu-public/external_videos/14/video.mp4" poster="https://storage.googleapis.com/soelu-public/external_videos/14/thumbnail.jpg"></video>
+        </div>
+        <div class="video-item">
+          <p>産後ケアヨガ</p>
+          <video controls src="https://storage.googleapis.com/soelu-public/external_videos/17/video.mp4" poster="https://storage.googleapis.com/soelu-public/external_videos/17/thumbnail.jpg"></video>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
